@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(180, 180, 180);
+  margin: 0;
+
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 36px;
+  overflow: hidden;
+  /*auto is better*/
+  /* overflow: visible;  by default*/
+  text-overflow: ellipsis;
+}
+
+/* Position */
+
+.container-position {
+  width: 250px;
+  height: 300px;
+  border: 5px solid #ccc;
+  box-sizing: border-box;
+  /* position: static; default */
+  position: relative;
+}
+
+/* .container-position div {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+ top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  inset: 0;
+  margin: auto;
+  /*center div
+} */
+
+.container-position div {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  /* position: fixed; it's fijo en patalla y no le afecta otro position*/
+  /* position: sticky; se queda dentro del contenedor*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
